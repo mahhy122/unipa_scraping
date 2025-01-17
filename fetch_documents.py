@@ -240,7 +240,7 @@ def document_downloader(lecture_date,lecture_order,weekday,message_order,file_nu
   )
 
   driver.get("https://unipa.u-hyogo.ac.jp/uprx/up/jg/jga001/Jga00101.xhtml")
-  id_list = ["eo24p106","95M7i9n6w#yz"]
+  id_list = [UNIPA_ID, UNIPA_PASSWORD]
 
   #ログイン
   driver.find_element(By.ID, "loginForm:userId").send_keys(id_list[0])
